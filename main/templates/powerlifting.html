@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+         <div>
+                 <form method="POST" action="">
+                         {{ form.hidden_tag() }}
+                         <fieldset>
+                                 <legend>Create Program</legend>
+                                 <div>
+                                         {{ form.title.label() }}
+                                         {{ form.title() }}
+                                 </div>
+
+                                 <div>
+                                         {{ form.age.label() }}
+                                         {{ form.age() }}
+                                 </div>
+                                 <div>
+                                         {{ form.gender.label() }}
+                                         {{ form.gender() }}
+                                 </div>
+                                 <div>
+                                         {{ form.benchMax.label() }}
+                                         {{ form.benchMax() }}
+                                 </div>
+                                 <div>
+                                         {{ form.squatMax.label() }}
+                                         {{ form.squatMax() }}
+                                 </div>
+                                 <div>
+                                         {{ form.deadliftMax.label() }}
+                                         {{ form.deadliftMax() }}
+                                 </div>
+                                 <div>
+                                         {{ form.submit.label() }}
+                                         {{ form.submit() }}
+                                 </div>
+                         </fieldset>
+                 </form>
+         </div>
+{% endblock %}

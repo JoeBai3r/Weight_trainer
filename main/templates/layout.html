@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Training Program </title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<h1> Welcome to My Trainer </h1>
+	<p> This is an app where you can choose a program, input your specific information, and then recieve a program that is specific to you. </p>
+	<div class="menu">
+		<div class="menu__item menu__item--home">
+			<a class="menu__main__item__link" href="/home">Home</a>
+		</div>
+		<div class="menu__item menu__item--create">
+			<a class="menu__main__item__link" href="/CreateProgram">Create Programs</a>
+		</div>
+		<div class="menu__item menu__item--programs">
+			<a class="menu__main__item__link" href="/MyPrograms">My Programs</a>
+		</div>
+	</div>
+	<div>
+		{% block content %}{% endblock %}
+	</div>
+</body>
+</html>

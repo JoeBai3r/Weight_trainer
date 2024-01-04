@@ -1,0 +1,306 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div>
+		<h1 class="header">Week 1</h1>
+		<div>
+			<h2 class="day">Monday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.55 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.55 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.55 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div>
+			<h2 class="day" >Wednesday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.55 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.55 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.55 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div>
+			<h2 class="day" >Friday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 12 at {{ program.benchMax * 0.55 }}lbs</p>
+					<p>Squat: 3 sets of 12 at {{ program.squatMax * 0.55 }}lbs</p>
+					<p>Dead Lift: 3 sets of 12 at {{ program.deadliftMax * 0.55 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+	<div>
+		<h1 class="header">Week 2</h1>
+		<div>
+			<h2 class="day" >Monday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.80 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.80 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.80 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div>
+			<h2 class="day" >Wednesday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.80 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.80 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.80 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+
+		<div>
+			<h2 class="day" >Friday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.80 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.80 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.80 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 10 at {{ program.benchMax * 0.65 }}lbs</p>
+					<p>Squat: 3 sets of 10 at {{ program.squatMax * 0.65 }}lbs</p>
+					<p>Dead Lift: 3 sets of 10 at {{ program.deadliftMax * 0.65 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+	<div>
+		<h1 class="header">Week 3</h1>
+		<div>
+			<h2 class="day" >Monday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.90 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.90 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.90 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.85 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.85 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.85 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.85 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.85 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.85 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div>
+			<h2 class="day" >Wednesday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.90 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.90 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.90 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.85 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.85 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.85 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.85 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.85 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.85 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div>
+			<h2 class="day" >Friday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.90 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.90 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.90 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.85 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.85 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.85 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.85 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.85 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.85 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 6 at {{ program.benchMax * 0.75 }}lbs</p>
+					<p>Squat: 3 sets of 6 at {{ program.squatMax * 0.75 }}lbs</p>
+					<p>Dead Lift: 3 sets of 6 at {{ program.deadliftMax * 0.75 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+	<div>
+		<h1 class="header">Week 4</h1>
+		<div>
+			<h2 class="day" >Monday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.95 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.95 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.95 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.95 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.95 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.95 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.90 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.90 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.90 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div>
+			<h2 class="day" >Wednesday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.95 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.95 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.95 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.95 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.95 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.95 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.90 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.90 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.90 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+		<div>
+			<h2 class="day" >Friday</h2>
+			{% if program.gender == 'Male' %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.95 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.95 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.95 }}lbs</p>
+				{% endif %}
+			{% else %}
+				{% if program.age <= 50 %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.95 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.95 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.95 }}lbs</p>
+				{% else %}
+					<p>Bench Press: 3 sets 3 at {{ program.benchMax * 0.90 }}lbs</p>
+					<p>Squat: 3 sets of 3 at {{ program.squatMax * 0.90 }}lbs</p>
+					<p>Dead Lift: 3 sets of 3 at {{ program.deadliftMax * 0.90 }}lbs</p>
+				{% endif %}
+			{% endif %}
+		</div>
+	</div>
+
+{% endblock %}
+
